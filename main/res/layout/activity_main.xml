@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#564222"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnGear"
+        android:layout_width="323dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#8BC34A"
+        android:text="Add Gear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtComment" />
+
+    <EditText
+        android:id="@+id/edtItem"
+        android:layout_width="284dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="48dp"
+        android:background="#3E3A3A"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Item Name"
+        android:textColor="#CDDC39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtCategory"
+        android:layout_width="285dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="19dp"
+        android:background="#053507"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Category"
+        android:textColor="#CDDC39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtItem" />
+
+    <EditText
+        android:id="@+id/edtQuantity"
+        android:layout_width="284dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="17dp"
+        android:background="#613D08"
+        android:ems="10"
+        android:inputType="text"
+        android:shadowColor="#FFEB3B"
+        android:text="Quantity"
+        android:textColor="#CDDC39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCategory" />
+
+    <EditText
+        android:id="@+id/edtComment"
+        android:layout_width="288dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:background="#2A1A03"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Comment"
+        android:textColor="#CDDC39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtQuantity" />
+
+    <Button
+        android:id="@+id/btnSecond"
+        android:layout_width="328dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:background="#8BC34A"
+        android:backgroundTint="#8BC34A"
+        android:backgroundTintMode="src_in"
+        android:text="continue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGear" />
+</androidx.constraintlayout.widget.ConstraintLayout>

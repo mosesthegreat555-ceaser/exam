@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#684613"
+    tools:context=".DetailedActivity">
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="311dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:background="#615A5A"
+        android:text="Display Gear List"
+        android:textColor="#8BC34A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="304dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="80dp"
+        android:background="#645F5F"
+        android:text="Back to Base"
+        android:textColor="#9D2020"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplay" />
+
+    <Button
+        android:id="@+id/btnQuantity"
+        android:layout_width="272dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:background="#29522A"
+        android:text="Display Quantity >=3"
+        android:textColor="#4CAF50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDisplay" />
+
+    <TextView
+        android:id="@+id/txtDisplay"
+        android:layout_width="285dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:text="Display"
+        android:textColor="#8BC34A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnQuantity" />
+</androidx.constraintlayout.widget.ConstraintLayout>
